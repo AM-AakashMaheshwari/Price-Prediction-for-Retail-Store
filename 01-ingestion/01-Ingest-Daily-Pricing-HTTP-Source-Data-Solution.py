@@ -66,7 +66,7 @@ dailyPricingSparkDF =  spark.createDataFrame(dailyPricingPandasDF)
 
 # COMMAND ----------
 
-
+display(dailyPricingSparkDF)
 
 # COMMAND ----------
 
@@ -83,10 +83,6 @@ dailyPricingSinkFolderPath = f"abfss://{daiilyPricingSinkLayerName}@{daiilyPrici
     .csv(dailyPricingSinkFolderPath)
 
 )
-
-
-
-# COMMAND ----------
 
 
 
